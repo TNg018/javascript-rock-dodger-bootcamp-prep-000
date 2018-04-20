@@ -42,6 +42,7 @@ function createRock(x) {
   rock.style.left = `${x}px`;
   var top = 0
  rock.style.top = top
+ if (top < GAME_HEIGHT)
 GAME.appendChild(rock)
 window.requestAnimationFrame(rock)
 }
